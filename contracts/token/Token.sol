@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 
 import "../compliance/interface/ICompliance.sol";
 
-/// @title ERC-3643 - T-Rex Token (Version RAPTOR-5.0.0)
+/// @title ERC-3643 - T-Rex Token (Version Trex-light)
 /// @notice An ERC-3643 compliant token with onchain validators and compliance checks.
 contract Token is IToken, AccessControl, Pausable {
     /// @dev ERC20 basic variables

@@ -59,7 +59,7 @@ describe("Token - Unit testing", () => {
     const {
       suite: { token },
     } = await loadFixture(deployFullSuiteFixture);
-    expect(await token.version()).to.equal("RAPTOR-5.0.0");
+    expect(await token.version()).to.equal("Trex-light");
   });
 
   it("Should fail if _transfer is from zero address", async () => {
