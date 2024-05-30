@@ -24,12 +24,19 @@ contract IdentityRegistry is IIdentityRegistry, AccessControl {
     IIdentityRegistryStorage private _tokenIdentityStorage;
 
     // keccak256(AGENT_ROLE)
+    // bytes32 public constant AGENT_ROLE =
+    //     0xcab5a0bfe0b79d2c4b1c2e02599fa044d115b7511f9659307cb4276950967709;
+
+    // // keccak256(OWNER_ROLE)
+    // bytes32 public constant OWNER_ROLE =
+    //     0xb19546dff01e856fb3f010c267a7b1c60363cf8a4664e21cc89c26224620214e;
+
     bytes32 public constant AGENT_ROLE =
-        0xcab5a0bfe0b79d2c4b1c2e02599fa044d115b7511f9659307cb4276950967709;
+        0xdb0c35594dee64a5914a475a1b1ea3aeefc80d203cbb31ffcfb63ff449afd5fb;
 
     // keccak256(OWNER_ROLE)
     bytes32 public constant OWNER_ROLE =
-        0xb19546dff01e856fb3f010c267a7b1c60363cf8a4664e21cc89c26224620214e;
+        0xa879d023ed36dea2b35a47110edde9adf2234b9d0e11a117418f644a54c45cf2;
 
     /// @dev Constructor of the IdentityRegistry contract.
     /// @param _claimIssuersRegistry The address of the claim issuers registry contract.

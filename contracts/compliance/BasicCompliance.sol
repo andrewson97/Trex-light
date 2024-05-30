@@ -12,12 +12,19 @@ contract BasicCompliance is ICompliance, AccessControl {
     IToken public tokenBound;
 
     // keccak256(ADMIN_ROLE)
+    // bytes32 public constant ADMIN_ROLE =
+    //     0xa49807205ce4d355092ef5a8a18f56e8913cf4a201fbe287825b095693c21775;
+
+    // // keccak256(TOKEN_ROLE)
+    // bytes32 public constant TOKEN_ROLE =
+    //     0xa7197c38d9c4c7450c7f2cd20d0a17cbe7c344190d6c82a6b49a146e62439ae4;
+
     bytes32 public constant ADMIN_ROLE =
-        0xa49807205ce4d355092ef5a8a18f56e8913cf4a201fbe287825b095693c21775;
+        0x6a7edec2dab32a875148040670512c86718856390cdafc91f1fc0d24487ecf6f;
 
     // keccak256(TOKEN_ROLE)
     bytes32 public constant TOKEN_ROLE =
-        0xa7197c38d9c4c7450c7f2cd20d0a17cbe7c344190d6c82a6b49a146e62439ae4;
+        0x9c863312b7305c0dc9c0454ec6d78ef2b06c254662d8f56b3552f623e757f626;
 
     constructor() {
         _grantRole(0x00, _msgSender());

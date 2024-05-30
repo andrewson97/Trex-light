@@ -13,11 +13,11 @@ contract FalseCompliance is ICompliance, AccessControl {
 
     // keccak256(ADMIN_ROLE)
     bytes32 public constant ADMIN_ROLE =
-        <fill here>;
+        0xa49807205ce4d355092ef5a8a18f56e8913cf4a201fbe287825b095693c21775;
 
     // keccak256(TOKEN_ROLE)
     bytes32 public constant TOKEN_ROLE =
-        <fill here>;
+        0xa7197c38d9c4c7450c7f2cd20d0a17cbe7c344190d6c82a6b49a146e62439ae4;
 
     constructor() {
         _grantRole(0x00, _msgSender());
